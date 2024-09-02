@@ -1,0 +1,53 @@
+:root {
+  --max-width: 1920px;
+  --border-radius: 12px;
+
+  --menu-layout-transition-width: 992px;
+
+  --container-padding: 15px;
+  --container-width: 760px;
+  --container-width-tablet: 980px;
+  --container-width-laptop: 1170px;
+  --container-width-desktop: 1330px;
+
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --background-white-rgb: 255, 255, 255;
+  --background-rgb: 255, 255, 255;
+}
+
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100vw;
+}
+
+body {
+  position: relative;
+
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+
+  font-family: var(--font-montserrat);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

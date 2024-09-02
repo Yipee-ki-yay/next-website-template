@@ -1,0 +1,45 @@
+.hide {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s linear;
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.4s linear;
+}
+
+.slideOut {
+  transform: translateY(0px);
+  transition: all 0.4s linear;
+}
+
+.slideIn {
+  transform: translateY(-10px);
+  transition: all 0.4s linear;
+}
+
+// === typography ===
+.capitalize-fl:first-letter {
+  text-transform: uppercase;
+}
+
+// === buttons ===
+button {
+  position: relative;
+
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  font-family: var(--font-montserrat);
+}
+
+body.menu-open {
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
